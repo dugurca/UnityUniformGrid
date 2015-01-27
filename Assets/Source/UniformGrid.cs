@@ -34,7 +34,7 @@ public class UniformGrid
 					float yPos = i * sizeOfVoxel;
 					float zPos = j * sizeOfVoxel;
 					var newPos = new Vector3(xPos, yPos, zPos);
-					var vox = CreateVoxel(voxelStartPos + newPos);
+					var vox = CreateVoxel(voxelStartPos + newPos, sizeOfVoxel);
 					vox.transform.parent = parentGO.transform;
 				}
 			}
